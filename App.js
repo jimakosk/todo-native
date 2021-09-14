@@ -32,8 +32,11 @@ export default function App() {
 
          {/* Today's Tasks */}
          <View style={styles.tasksWrapper}>
+         <Text style={styles.app} >Hello World!</Text>
+
            <Text style={styles.sectionTitle}>Today's tasks</Text>
            <View style={styles.items}>
+
              {/* This is where the tasks will go! */}
              {
                taskItems.map((item, index) => {
@@ -69,6 +72,9 @@ export default function App() {
   );
 }
 const styles = StyleSheet.create({
+  app:{
+backgroundColor: 'green',
+  },
   container: {
     flex: 1,
     backgroundColor: '#E8EAED',
